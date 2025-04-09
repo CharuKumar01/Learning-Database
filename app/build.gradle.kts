@@ -54,10 +54,10 @@ dependencies {
 
 protobuf {
     protoc {
-        artifact = "com.google.protobuf:protoc:21.7"
+        artifact = "com.google.protobuf:protoc:3.21.9"
     }
 
-    // Generates the java Protobuf-lite code for the Protobufs in this project. See
+    // Generates the java Protobuf-lite code for the Protobuf in this project. See
     // https://github.com/google/protobuf-gradle-plugin#customizing-protobuf-compilation
     // for more information.
     generateProtoTasks {
@@ -65,6 +65,9 @@ protobuf {
             task.builtins {
                 create("java").option("lite")
             }
+            task.inputs.dir("src/main/proto")
+            task.outputs.dir("build/generated/source/proto/main")
         }
+
     }
 }

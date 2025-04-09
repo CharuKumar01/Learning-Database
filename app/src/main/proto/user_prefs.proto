@@ -1,4 +1,4 @@
-syntax = "proto3"
+syntax = "proto3";
 
 option java_package = "com.example.database";
 option java_multiple_files = true;
