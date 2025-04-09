@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Database</string>
+    <string name="register">Register</string>
+    <string name="terms_and_privacy">I accept the terms and privacy</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="fullName">Full Name</string>
 </resources>
