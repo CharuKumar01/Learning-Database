@@ -3,3 +3,17 @@ plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android) apply false
 }
+buildscript {
+
+    repositories {
+        google()
+        maven("https://maven.google.com/")
+    }
+    dependencies {
+        classpath(libs.google.services)
+        classpath(libs.gradle)
+    }
+    repositories {
+        mavenCentral()
+    }
+}

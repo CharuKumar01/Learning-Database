@@ -1,0 +1,10 @@
+syntax = "proto3"
+
+option java_package = "com.example.database";
+option java_multiple_files = true;
+
+message UserPreferences {
+    string full_name = 1;
+    string email = 2;
+    string password = 3;
+}
