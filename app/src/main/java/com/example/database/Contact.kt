@@ -6,9 +6,9 @@ import java.util.Date
 
 @Entity(tableName = "contact")
 data class Contact(
-    @PrimaryKey(autoGenerate = true)
-    val id : Long,
     val name : String,
     val phone : String,
-    val createdDate: Date
+    val createdDate: Date,
+    @PrimaryKey(autoGenerate = true)
+    val uniqueId : Long = 0
 )
