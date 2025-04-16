@@ -1,4 +1,4 @@
-package com.example.database
+package com.example.database.database
 
 import androidx.room.TypeConverter
 import java.util.*
