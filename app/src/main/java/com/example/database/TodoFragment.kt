@@ -27,7 +27,7 @@ class TodoFragment : Fragment() {
         val repo = TodoRepository(database)
         tvm = ViewModelProvider(this, TodoViewModelFactory(repo))[TodoViewModel::class.java]
 
-        val adapter = TodoAdapter()
+        val adapter = TodoAdapter(tvm)
         bind.rvTodo.adapter = adapter
         bind.rvTodo.layoutManager = LinearLayoutManager(requireContext())
 

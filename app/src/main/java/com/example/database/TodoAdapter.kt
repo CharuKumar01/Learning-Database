@@ -7,6 +7,7 @@ import com.example.database.database.Todo
 import com.example.database.databinding.ItemTodoBinding
 
 class TodoAdapter(
+    private val todoViewModel: TodoViewModel
 ) : RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
 
     private var todos: List<Todo> = emptyList()
@@ -24,10 +25,14 @@ class TodoAdapter(
     }
 
     override fun onBindViewHolder(holder: TodoAdapter.TodoViewHolder, position: Int) {
-        val todo = todos[position]
+        val currentTodo = todos[position]
         holder.bind.apply {
-            tvTitle.text = todo.title
-            cbDone.isChecked = todo.isChecked
+            tvTitle.text = currentTodo.title
+            cbDone.isChecked = currentTodo.isChecked
+            itemTodo.setOnLongClickListener {
+                todoViewModel.deleteTodo(currentTodo)
+                true
+            }
         }
     }
 

@@ -9,4 +9,6 @@ class TodoRepository(val database: TodoDatabase) {
     }
 
     fun getTodos() = database.todoDao().getTodos()
+
+    suspend fun deleteTodo(todo: Todo) = database.todoDao().deleteTodo(todo)
 }
