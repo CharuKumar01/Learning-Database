@@ -21,6 +21,7 @@ class TodoFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        // databinding
         bind = DataBindingUtil.inflate(inflater, R.layout.fragment_todo, container, false)
 
         database = TodoDatabase.getDatabase(requireContext())
