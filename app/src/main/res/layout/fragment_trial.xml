@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/peach"
+        app:cardCornerRadius="30dp"
+        app:cardUseCompatPadding="true"
+        tools:context=".MainActivity.Fragments.SelectCategoryDialog">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_baby"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/baby" />
+
+            <TextView
+                android:id="@+id/tv_baby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_baby"
+                android:layout_alignStart="@id/iv_baby"
+                android:layout_alignEnd="@id/iv_baby"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/baby" />
+
+            <ImageView
+                android:id="@+id/iv_beauty"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                android:layout_toEndOf="@id/iv_baby"
+                android:src="@drawable/beauty" />
+
+            <TextView
+                android:id="@+id/tv_beauty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_beauty"
+                android:layout_alignStart="@id/iv_beauty"
+                android:layout_alignEnd="@id/iv_beauty"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/beauty" />
+
+            <ImageView
+                android:id="@+id/iv_bills"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                android:layout_toEndOf="@id/iv_beauty"
+                android:src="@drawable/bills" />
+
+            <TextView
+                android:id="@+id/tv_bills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_bills"
+                android:layout_alignStart="@id/iv_bills"
+                android:layout_alignEnd="@id/iv_bills"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/bills" />
+
+            <ImageView
+                android:id="@+id/iv_car"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_baby"
+                android:layout_margin="16dp"
+                android:src="@drawable/car" />
+
+            <TextView
+                android:id="@+id/tv_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_car"
+                android:layout_alignStart="@id/iv_car"
+                android:layout_alignEnd="@id/iv_car"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/car" />
+
+            <ImageView
+                android:id="@+id/iv_clothing"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_beauty"
+                android:layout_margin="16dp"
+                android:layout_toEndOf="@id/iv_car"
+                android:src="@drawable/clothing" />
+
+            <TextView
+                android:id="@+id/tv_clothing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_clothing"
+                android:layout_alignStart="@id/iv_clothing"
+                android:layout_alignEnd="@id/iv_clothing"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/clothing" />
+
+            <ImageView
+                android:id="@+id/iv_education"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_bills"
+                android:layout_margin="16dp"
+                android:layout_toEndOf="@id/iv_clothing"
+                android:src="@drawable/education" />
+
+            <TextView
+                android:id="@+id/tv_education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_clothing"
+                android:layout_alignStart="@id/iv_education"
+                android:layout_alignEnd="@id/iv_education"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/education" />
+
+            <ImageView
+                android:id="@+id/iv_electronics"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_car"
+                android:layout_margin="16dp"
+                android:src="@drawable/electronics" />
+
+            <TextView
+                android:id="@+id/tv_electronics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_electronics"
+                android:layout_alignEnd="@id/iv_electronics"
+                android:layout_marginTop="-10dp"
+                android:text="@string/electronics" />
+
+            <ImageView
+                android:id="@+id/iv_entertainment"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_clothing"
+                android:layout_margin="16dp"
+                android:layout_toEndOf="@id/iv_electronics"
+                android:src="@drawable/entertainment" />
+
+            <TextView
+                android:id="@+id/tv_entertainment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_entertainment"
+                android:layout_alignStart="@id/iv_entertainment"
+                android:layout_marginStart="-11dp"
+                android:layout_marginTop="-10dp"
+                android:text="@string/entertainment" />
+
+            <ImageView
+                android:id="@+id/iv_food"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_education"
+                android:layout_margin="16dp"
+                android:layout_toEndOf="@id/iv_entertainment"
+                android:src="@drawable/food" />
+
+            <TextView
+                android:id="@+id/tv_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_food"
+                android:layout_alignStart="@id/iv_food"
+                android:layout_alignEnd="@id/iv_food"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/food" />
+
+            <ImageView
+                android:id="@+id/iv_health"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_electronics"
+                android:layout_margin="16dp"
+                android:src="@drawable/health" />
+
+            <TextView
+                android:id="@+id/tv_health"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_health"
+                android:layout_alignStart="@id/iv_health"
+                android:layout_alignEnd="@id/iv_health"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/health" />
+
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_entertainment"
+                android:layout_margin="16dp"
+                android:layout_toEndOf="@id/iv_health"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_home"
+                android:layout_alignStart="@id/iv_home"
+                android:layout_alignEnd="@id/iv_home"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/home" />
+
+            <ImageView
+                android:id="@+id/iv_insurance"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_food"
+                android:layout_margin="16dp"
+                android:layout_toEndOf="@id/iv_home"
+                android:src="@drawable/insurance" />
+
+            <TextView
+                android:id="@+id/tv_insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_insurance"
+                android:layout_alignStart="@id/iv_insurance"
+                android:layout_alignEnd="@id/iv_insurance"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/insurance" />
+
+            <ImageView
+                android:id="@+id/iv_shopping"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_health"
+                android:layout_margin="16dp"
+                android:src="@drawable/shopping" />
+
+            <TextView
+                android:id="@+id/tv_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_shopping"
+                android:layout_alignStart="@id/iv_shopping"
+                android:layout_alignEnd="@id/iv_shopping"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/shopping" />
+
+            <ImageView
+                android:id="@+id/iv_social"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_home"
+                android:layout_margin="16dp"
+                android:layout_toEndOf="@id/iv_shopping"
+                android:src="@drawable/social" />
+
+            <TextView
+                android:id="@+id/tv_social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_social"
+                android:layout_alignStart="@id/iv_social"
+                android:layout_alignEnd="@id/iv_social"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/social" />
+
+            <ImageView
+                android:id="@+id/iv_sport"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_insurance"
+                android:layout_margin="16dp"
+                android:layout_toEndOf="@id/iv_social"
+                android:src="@drawable/sport" />
+
+            <TextView
+                android:id="@+id/tv_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_sport"
+                android:layout_alignStart="@id/iv_sport"
+                android:layout_alignEnd="@id/iv_sport"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="@string/sport" />
+
+            <ImageView
+                android:id="@+id/iv_tax"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_shopping"
+                android:layout_margin="16dp"
+                android:src="@drawable/tax" />
+
+            <TextView
+                android:id="@+id/tv_tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_tax"
+                android:layout_alignStart="@id/iv_tax"
+                android:layout_alignEnd="@id/iv_tax"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/tax" />
+
+            <ImageView
+                android:id="@+id/iv_telephone"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_social"
+                android:layout_margin="16dp"
+                android:layout_toEndOf="@id/iv_tax"
+                android:src="@drawable/telephone" />
+
+            <TextView
+                android:id="@+id/tv_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_telephone"
+                android:layout_alignStart="@id/iv_telephone"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/telephone" />
+
+            <ImageView
+                android:id="@+id/iv_transportation"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/tv_sport"
+                android:layout_margin="16dp"
+                android:layout_toEndOf="@id/iv_telephone"
+                android:src="@drawable/transportation" />
+
+            <TextView
+                android:id="@+id/tv_transportation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_transportation"
+                android:layout_alignStart="@id/iv_transportation"
+                android:layout_marginStart="-16dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/transportation" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
