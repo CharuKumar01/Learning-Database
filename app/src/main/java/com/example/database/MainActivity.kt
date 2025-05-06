@@ -34,7 +34,5 @@ class MainActivity : AppCompatActivity() {
                 database.todoDao().insertTodo(Todo("Add your first task!", false, 1))
             }
         }
-
-
     }
 }
